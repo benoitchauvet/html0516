@@ -12,7 +12,11 @@
 		<meta http-equiv="refresh" content="30000000"/>
 		-->
 		
+		<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+		
+		<!--
 		<style>
+			/*
 			h2
 			{
 				color:red;
@@ -23,8 +27,10 @@
 			{
 				font-family:'Comic sans ms';
 			}
-			
+			*/
 		</style>
+		-->
+		
 		
 	</head>
 	<body>
@@ -37,23 +43,23 @@
 			<ul><!-- list item -->
 				<li><a href="#">Accueil</a></li>
 				<li><a href="#">Roland Garros</a></li>
-				<li><a href="#">Meteo</a></li>
+				<li><a href="#art42">Meteo</a></li>
 				<li><a href="#">Forfaits</a></li>
 			</ul>	
 		</nav>
 		<div>
 			<section>
 				<h2>A la une</h2>
-				<article>
+				<article id="art1">
 					<img src="/images/rg.jpg" alt="rg"/>
 					<h2>Gasquet en 8èmes</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					<p>Lorem <span>plop</span> ipsum dolor sit amet, <span>plop</span> consectetur adipiscing elit, sed do <span>plop</span> eiusmod tempor incididunt <span>plop</span> ut labore et dolore magna aliqua.
 					</p>
 				</article>
 				<article>
 					<img src="/images/rg.jpg" alt="rg"/>
-					<h2>Paire perd...</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					<h2 class="barre">Paire perd...</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <span style="text-shadow:10px 10px 5px yellow;" class="barre surligne">sed do eiusmod tempor</span> incididunt ut labore et dolore magna aliqua.
 					</p>
 				</article>
 				<article>
@@ -86,7 +92,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					</p>
 				</article>
-				<article>
+				<article id="art42">
 					<img src="/images/rg.jpg" alt="rg"/>
 					<h2>Il pleut sur les courts</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

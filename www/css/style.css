@@ -1,0 +1,69 @@
+/* universel */
+
+*
+{
+    font-family:'Comic Sans MS';
+}
+
+/* tagname */
+body{
+    background-color:#f1761a;
+    font-family:Arial;
+}
+
+h2
+{
+    color:lightblue;
+    background-color:#0cbb4b;
+}
+
+/* id */
+#art1
+{
+    background-color:yellow;
+}
+
+a:after
+{
+    content:'>>>';
+}
+
+article:hover span
+{
+    font-size:2em;
+    color:red;
+}
+
+nav a:hover 
+{
+    background-color:red;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+
+/* classe */
+.surligne
+{
+    text-shadow:10px 10px 5px red;
+    background-color:chartreuse;
+}
+
+p .surligne
+{
+
+}
+
+.barre
+{
+    text-shadow:10px 10px 5px black;
+    text-decoration:line-through;
+}
+
+h1,
+h3,
+h5
+{
+    color:blue;
+}
+
