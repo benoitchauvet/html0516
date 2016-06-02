@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- ceci est un commentaire...	-->
+		<title>Ma page</title>
+		<meta charset="UTF-8"/>
+		
+	</head>
+	<body>
+	
+		<input type="text" id="txtNom" placeholder="votre nom..."/>
+		<input type="button" id="btnOk" value="ok"/>
+		<span id="lblMessage"></span>
+	
+		<script>
+			
+			function afficherNom()
+			{
+			  // récupérer l'élément input qui contient le nom (txtNom)
+			  var nom = document.getElementById('txtNom');
+
+			  // mettre sa valeur dans le span du message (innerHTML)
+			  var message = document.getElementById('lblMessage');
+
+			  message.innerHTML = nom.value;
+			}
+			
+			var bouton = document.getElementById('btnOk');
+			
+			//bouton.onclick = afficherNom;
+			
+			// equivaut à :
+			
+			bouton.addEventListener('click', function(event){
+				var nom = document.getElementById('txtNom');
+				var message = document.getElementById('lblMessage');
+				message.innerHTML = nom.value;
+				console.log(event);
+			});
+			
+			document.addEventListener('keypress', function(event){
+				console.log(event);
+			});
+			
+			
+		</script>
+	</body>
+</html>
