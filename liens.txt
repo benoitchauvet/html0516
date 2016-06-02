@@ -7,3 +7,14 @@ doc, références :
 http://www.alsacreations.com/
 http://www.w3schools.com/
 
+positionnement: http://jsbin.com/sonisobeya/edit?css,output
+
+dimensionnement : http://jsbin.com/senorucifa/edit?html,css,output
+
+float (enluminures) : http://jsbin.com/menatolaho/edit?html,css,output
+
+float (positionnement) : http://jsbin.com/hexufayonu/edit?html,css,output
+
+flex : http://jsbin.com/mofugeqasi/edit?html,css,output
+
+
