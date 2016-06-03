@@ -38,6 +38,30 @@ nav {
   order: -1; /* nav s'affiche en premier */
 }
 
+
+/* Responsive (fenêtres de moins de 640px) */
+@media (max-width: 640px) {
+  .wrapper {
+    flex-direction: column; /* affichage vertical */
+  }
+  nav,
+  aside {
+    width: auto; /* pour écraser la valeur 10em */
+  }
+  nav,
+  aside,
+  article {
+    flex-basis: auto; /* pour écraser la valeur flex-basis:10em */
+  }
+  
+  nav {
+    order: 0; /* nav reprend sa place */
+  }
+}
+
+
+
+
 /* Decoration */
 body {
   margin: 0;
