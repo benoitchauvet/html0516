@@ -7,7 +7,8 @@
 }
 
 html {
-  display: flex; flex-direction: column; /* correction bug IE de min-height non appliqué à body */
+  display: flex; 
+  flex-direction: column; /* correction bug IE de min-height non appliqué à body */
 }
 
 body {
@@ -37,30 +38,10 @@ nav {
   order: -1; /* nav s'affiche en premier */
 }
 
-
-@media (max-width: 640px) {
-  .wrapper {
-    flex-direction: column; /* affichage vertical */
-  }
-  nav,
-  aside {
-    _width: auto; /* pour écraser la valeur 10em */
-  }
-  nav,
-  aside,
-  article {
-    flex-basis: auto; /* pour écraser la valeur 0, due au flex: 1 */
-  }
-  nav {
-    order: 0; /* nav reprend sa place */
-  }
-}
-
-
 /* Decoration */
 body {
   margin: 0;
-  background: #999;
+  background: #999;  /* rgba(255,255,255, 0.5) */
   font-family: arial, sans-serif;
 }
 
