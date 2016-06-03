@@ -142,7 +142,7 @@
 			// Mouvement de la souris sur le canvas :
 			canvas.onmousemove = function(e) {
 				// Si je suis en train de dessiner (click souris enfoncé) :
-				if (painting) {
+				if (painting == true) {
 					// Set Coordonnées de la souris :
 					cursorX = (e.pageX - this.offsetLeft) - 10; // 10 = décalage du curseur
 					cursorY = (e.pageY - this.offsetTop) - 10;

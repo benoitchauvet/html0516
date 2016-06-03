@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<!-- ceci est un commentaire...	-->
+		<title>Ma page</title>
+		<meta charset="UTF-8"/>
+		
+	</head>
+	<body>
+	
+		Ma couleur : <input type="color" id="coul"/>
+		
+		<input type="button" value="enregistrer" onclick="enregistrer()"/>
+		
+	
+		<script>
+		
+			function enregistrer()
+			{
+				var input = document.getElementById('coul');
+				// ecriture dans le localStorage :
+				window.localStorage.couleurPreferee = coul.value;
+			}
+		
+			if (window.localStorage.couleurPreferee)
+			{
+				var body = document.querySelector('body');
+				// lecture dans le localStorage :
+				body.style.background = window.localStorage.couleurPreferee;
+			}
+			else
+			{
+				alert("vous n'avez pas choisi de couleur préférée");
+			}
+			
+		</script>
+	</body>
+</html>
