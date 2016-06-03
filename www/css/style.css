@@ -1,69 +1,120 @@
-/* universel */
-
-*
+@font-face
 {
-    font-family:'Comic Sans MS';
+	font-family: 'jedi';
+    src: url('jedi.ttf');
 }
 
-/* tagname */
+*{
+    box-sizing:border-box;
+}
+
+a
+{
+    color:#000;
+}
+
 body{
-    background-color:#f1761a;
+    background:#fac09c;
     font-family:Arial;
 }
 
-h2
-{
-    color:lightblue;
-    background-color:#0cbb4b;
+header,
+nav,
+section,
+article,
+aside,
+footer{
+    padding:10px;
+    border-radius:8px;
+    margin:5px;
 }
 
-/* id */
-#art1
-{
-    background-color:yellow;
+/* ENTETE */
+
+header{
+    background:#FF9453;
+    display:flex;
+    align-items:center;
 }
 
-a:after
+h1
 {
-    content:'>>>';
+    margin:0;
+    flex-grow:1;
+    text-align:center;
+    font-family:jedi, Arial;
+    font-size:3em;
+    font-weight:normal;
+    color:#16B0B2;
+    text-shadow: 8px 12px 5px rgba(70, 141, 111, 1);
 }
 
-article:hover span
+/* MENU */
+
+nav
 {
-    font-size:2em;
-    color:red;
+    background:#FF9453;
 }
 
-nav a:hover 
+ul
 {
-    background-color:red;
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
+    margin:0;
+    display:flex;
+    justify-content:space-around;
 }
 
-/* classe */
-.surligne
-{
-    text-shadow:10px 10px 5px red;
-    background-color:chartreuse;
+li {
+    font-size:larger;
+    display:inline;
 }
 
-p .surligne
-{
+/*CONTENU PPAL */
 
+.wrapper
+{
+    display:flex;
+    flex-direction:row;
 }
 
-.barre
+#listeArticles
 {
-    text-shadow:10px 10px 5px black;
-    text-decoration:line-through;
+    flex-grow:1;
+    background-color:#FF9453;
+
+    display:flex;
+    flex-wrap:wrap;
 }
 
-h1,
-h3,
-h5
+section>h2
 {
-    color:blue;
+    flex-basis:100%;
+    text-align:center;
+    font-family:jedi;
+    color:#16B0B2;
+    text-shadow: 8px 12px 5px rgba(70, 141, 111, 1);
+    font-weight:normal;
 }
 
+article
+{
+    flex-grow:1;
+    flex-basis:20em;
+    
+    border:1px solid black;
+    height:20em;
+    overflow:hidden;
+}
+
+#complements
+{
+    flex-basis:30em;
+    background-color:#FF9453;
+}
+
+/* FOOTER */
+
+footer
+{
+    background-color:#FF9453;
+    text-align:center;
+}
